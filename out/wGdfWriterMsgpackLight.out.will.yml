@@ -2,13 +2,10 @@ format: outwillfile-2.0
 root:
   - wGdfWriterMsgpackLight.out
 consistency:
-  wGdfWriterMsgpackLight.out.will.yml: &ref_0
-    hash: 72d169753a70e08ba1cca349bc939cbc
-    size: 36994
-  ../.ex.will.yml: &ref_1
-    hash: faa9018a92d4e736ececb9104840fc8c
-    size: 1744
-  ../.im.will.yml: &ref_2
+  ../.ex.will.yml: &ref_0
+    hash: 57e08e1c8d65ccb35f590e848d992c76
+    size: 1745
+  ../.im.will.yml: &ref_1
     hash: 4bd2ad8e081461ac0a9600e6aa2abea9
     size: 4662
 module:
@@ -19,19 +16,19 @@ module:
       description: ___
       enabled: 1
       version: 0.4.0
-      interpreters:
+      interpreters: &ref_2
         - njs >= 10.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords:
+      keywords: &ref_3
         - tools
         - wTools
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
+      contributors: &ref_4
         - Kostiantyn Wandalen <wanalen@01.school>
       npm.name: wgdfwritermsgpacklight
-      npm.scripts:
+      npm.scripts: &ref_5
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -675,24 +672,6 @@ module:
           content: prime
         inherit:
           - files.transpile
-      exported.proto.export:
-        opts:
-          filePath: 'reflector::exported.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
-      exported.files.proto.export:
-        opts:
-          filePath: 'reflector::exported.files.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
     build:
       proto.export:
         steps:
@@ -781,9 +760,8 @@ module:
           content: proto
           export: 1
     consistency:
-      wGdfWriterMsgpackLight.out.will.yml: *ref_0
-      ../.ex.will.yml: *ref_1
-      ../.im.will.yml: *ref_2
+      ../.ex.will.yml: *ref_0
+      ../.im.will.yml: *ref_1
   ../:
     about:
       name: wGdfWriterMsgpackLight
@@ -791,21 +769,13 @@ module:
       description: ___
       enabled: 1
       version: 0.4.0
-      interpreters:
-        - njs >= 10.0.0
-        - chrome >= 60.0.0
-        - firefox >= 60.0.0
-      keywords:
-        - tools
-        - wTools
+      interpreters: *ref_2
+      keywords: *ref_3
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
-        - Kostiantyn Wandalen <wanalen@01.school>
+      contributors: *ref_4
       npm.name: wgdfwritermsgpacklight
-      npm.scripts:
-        test: wtest .run proto/**
-        docgen: wdocgen .build proto
+      npm.scripts: *ref_5
     path:
       module.willfiles:
         criterion:
@@ -1453,11 +1423,8 @@ module:
           - 'build::npm'
     consistency:
       ../.ex.will.yml:
-        hash: faa9018a92d4e736ececb9104840fc8c
-        size: 1744
+        hash: 57e08e1c8d65ccb35f590e848d992c76
+        size: 1745
       ../.im.will.yml:
         hash: 4bd2ad8e081461ac0a9600e6aa2abea9
         size: 4662
-      wGdfWriterMsgpackLight.out.will.yml:
-        hash: 72d169753a70e08ba1cca349bc939cbc
-        size: 36994
