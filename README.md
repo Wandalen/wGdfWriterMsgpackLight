@@ -1,5 +1,5 @@
 
-# module::GdfWriterMsgpackLight  [![Status](https://github.com/Wandalen/wGdfWriterMsgpackLight/workflows/publish/badge.svg)](https://github.com/Wandalen/wGdfWriterMsgpackLight/actions?query=workflow%3Apublish) [![experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/emersion/stability-badges#experimental)
+# module::GdfWriterMsgpackLight  [![status](https://github.com/Wandalen/wGdfWriterMsgpackLight/workflows/publish/badge.svg)](https://github.com/Wandalen/wGdfWriterMsgpackLight/actions?query=workflow%3Apublish) [![experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/emersion/stability-badges#experimental)
 
 ___
 

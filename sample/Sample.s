@@ -3,5 +3,5 @@ let _ = require( 'wgdfwritermsgpacklight' );
 
 /**/
 
-___
+console.log( '___ not implemented ___' );
 
